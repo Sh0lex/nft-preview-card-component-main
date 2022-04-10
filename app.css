@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+    width: 375px;
+    height: 610px;
+    border-radius: 3%;
+}
+
+section .nft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 360px;
+    padding-top: 20px;
+    border-radius: 10px;
+    border-top-left-radius: 9%;
+    border-top-right-radius: 9%;
+}
+
+section .h1 {
+    width: 330px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+section p {
+    max-width: 85%;
+    font-size: 18px;
+    padding-right: 12px;
+    font-weight: lighter;
+    color: hsl(215, 51%, 70%);
+}
+
+
+section .lastline {
+    min-width: 90%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+
+section .lastline .eth {
+    color: hsl(178, 100%, 50%);
+}
+
+section .lastline .clock {
+    padding-right: 5px;
+    color: hsl(215, 51%, 70%);
+}
+
+section .bottom {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100px;
+}
+
+section .bottom img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 47%;
+    margin-top: 15px;
+}
+
+section .text {
+    padding: 22.5px 0 0 20px;
+    color: hsl(215, 51%, 70%);
+}
+
+section #name {
+    color: white;
+    font-weight: 300;
+}
