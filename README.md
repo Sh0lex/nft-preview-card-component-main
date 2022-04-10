@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot-of-solution](design\FireShot Webpage Screenshot #010 - 'Frontend Mentor I NFT preview card component' - file.jpg)
+![Screenshot-of-solution](./design/FireShot Webpage Screenshot #010 - 'Frontend Mentor I NFT preview card component' - file.jpg)
 
 ### Links
 https://sh0lex.github.io/nft-preview-card-component-main/
