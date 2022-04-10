@@ -25,10 +25,10 @@ section {
     border-radius: 3%;
 }
 
-section .nft {
+.nft {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     width: 90%;
     height: 360px;
     padding-top: 20px;
@@ -37,12 +37,43 @@ section .nft {
     border-top-right-radius: 9%;
 }
 
-section .h1 {
+.view {
+    position: absolute;
+    width: 337.5px;
+    height: 337.5px;
+    margin-top: 20px;
+    background-color: hsl(178, 100%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px hidden hsl(178, 100%, 50%);
+    border-radius: 10px;
+    opacity: 0.5;
+    visibility: hidden;
+    transition: all 2s;
+}
+
+.eye {
+    width: 48px;
+    height: 48px;
+}
+
+img:hover+div {
+    visibility: visible;
+}
+
+.h1 {
     width: 330px;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
     font-size: 25px;
     margin-bottom: 0;
+    transition: all 1s;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 section p {
@@ -54,7 +85,7 @@ section p {
 }
 
 
-section .lastline {
+.lastline {
     min-width: 90%;
     max-width: 1440px;
     display: flex;
@@ -64,23 +95,23 @@ section .lastline {
 }
 
 
-section .lastline .eth {
+.lastline .eth {
     color: hsl(178, 100%, 50%);
 }
 
-section .lastline .clock {
+.lastline .clock {
     padding-right: 5px;
     color: hsl(215, 51%, 70%);
 }
 
-section .bottom {
+.bottom {
     display: flex;
     flex-direction: row;
     width: 90%;
     height: 100px;
 }
 
-section .bottom img {
+.bottom img {
     width: 30px;
     height: 30px;
     border: 1px solid white;
@@ -88,12 +119,18 @@ section .bottom img {
     margin-top: 15px;
 }
 
-section .text {
+.text {
     padding: 22.5px 0 0 20px;
     color: hsl(215, 51%, 70%);
+    transition: none;
 }
 
-section #name {
+#name {
     color: white;
     font-weight: 300;
+    transition: color 1s;
+}
+
+span #name:hover {
+    color: hsl(178, 100%, 50%);
 }
